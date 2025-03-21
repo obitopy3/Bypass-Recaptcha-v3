@@ -2,6 +2,7 @@
 <h2> fully explained </h2>
 
 ```python
+import requests
 params = {
     'ar': '1',
     'k': #take it form anchor,
@@ -12,7 +13,7 @@ params = {
     'cb': # from anchor,
 }
 
-response = requests.get('https://www.google.com/recaptcha/enterprise/anchor', params=params, cookies=cookies, headers=headers);token = re.search(r'id="recaptcha-token" value="([^"]+)"', response.text).group(1);reloa_url = "https://www.google.com/recaptcha/enterprise/reload?k=6Lec1Q0qAAAAAOmMUUj86M8koCFS4FJr0dzxo9qf"
+response = requests.get('https://www.google.com/recaptcha/enterprise/anchor', params=params, headers=headers);token = re.search(r'id="recaptcha-token" value="([^"]+)"', response.text).group(1);reloa_url = "https://www.google.com/recaptcha/enterprise/reload?k=replace this"
 
 reload_data = {
     "v":"EGbODne6buzpTnWrrBprcfAY", # the version of captcha 
@@ -35,3 +36,4 @@ that's all 🗣️</h3>
   my account 
   https://t.me/assemblyexe
 </h1>
+<p>if something went wrong in anchor just but some cookies </p>
