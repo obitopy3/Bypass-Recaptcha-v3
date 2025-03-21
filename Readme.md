@@ -13,7 +13,7 @@ params = {
     'cb': # from anchor,
 }
 
-response = requests.get('https://www.google.com/recaptcha/enterprise/anchor', params=params, headers=headers);token = re.search(r'id="recaptcha-token" value="([^"]+)"', response.text).group(1);reloa_url = "https://www.google.com/recaptcha/enterprise/reload?k=replace this"
+response = requests.get('https://www.google.com/recaptcha/enterprise/anchor', params=params);token = re.search(r'id="recaptcha-token" value="([^"]+)"', response.text).group(1);reloa_url = "https://www.google.com/recaptcha/enterprise/reload?k=replace this"
 
 reload_data = {
     "v":"EGbODne6buzpTnWrrBprcfAY", # the version of captcha 
