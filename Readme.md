@@ -2,7 +2,7 @@
 <h2> fully explained </h2>
 
 ```python
-import requests
+import requests,re
 params = {
     'ar': '1',
     'k': #take it form anchor,
